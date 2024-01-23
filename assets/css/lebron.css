@@ -1,0 +1,540 @@
+#bg{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    overflow: hidden;
+}
+
+nav{
+    background-color: #1c3012;
+    padding: 10px 0;
+    margin: 0;
+    border-radius: 20px;
+}
+
+.navbar-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-content span{
+    font-size: 50px;
+    font-family: serif, sans-serif;
+    color: white;
+    padding: 0;
+    margin-left: 300px;
+}
+
+.navbar-links{
+    margin-right: 25px;
+}
+
+.navbar-links a{
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    font-size: 18px;
+    font-family: sans-serif, serif;
+    margin-right: 5px;
+    color:white;
+    cursor: pointer;
+}
+
+.navbar-links a:hover{
+    background-color: lightcoral;
+    border-radius: 5px;
+}
+
+.image-container{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; 
+    overflow: hidden;
+    margin-left: 20px
+}
+
+.image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form-row input{
+    border: 0;
+    box-shadow: inset 0 0 10px lightgray;
+    border-radius: 8px;
+}
+
+.sign-input{
+    border: 0;
+    box-shadow: inset 0 0 10px lightgray;
+    border-radius: 8px;
+}
+
+.popsignup{
+    width: 400px;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: black;
+    font-family: sans-serif, serif;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    background-color: #FFFEF2; 
+    box-shadow: darkgreen 0px 5px 15px
+}
+
+.open-popup{
+    background: #FFFEF2;
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    z-index: 999;
+}
+
+.role{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-family: sans-serif, serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.role-option{
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.main label, .main input::placeholder{
+    font-family: sans-serif, serif;
+    margin-right: auto;
+}
+
+.inform{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.infoinput{
+    height: 25px;
+}
+
+.showpass{
+    margin-left: auto;
+    margin-bottom: 5px;
+}
+
+.submitbutton{
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    background: #1c3012;
+    color: #fff;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    font-size: 25px;
+    overflow: hidden;
+}
+
+/*This is where the signin form styling starts*/
+
+.popsignin{
+    width: 400px;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: black;
+    font-family: sans-serif, serif;
+    transition: transform 0.4s, top 0.4s;
+    visibility: hidden;
+    background-color: #FFFEF2; 
+    box-shadow: darkgreen 0px 5px 15px
+}
+
+.open-popin{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    z-index: 99999;
+}
+
+.main-signin label, .main-signin input::placeholder{
+    font-family: sans-serif, serif;
+    margin-right: auto;
+}
+
+.signform{
+    display: flex;
+    flex-direction: column;
+}
+
+.signin-row{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sign-input{
+    height: 25px;
+}
+
+.signin-show{
+    margin-bottom: 5px;
+}
+
+.signin-show span{
+    float: left;
+}
+
+.signshow{
+    float: right;
+}
+
+.signin-submit{
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    background: #1c3012;
+    color: #fff;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    font-size: 25px;
+    overflow: hidden;
+}
+
+/*This is where the forgot password form starts */
+.popforgot{
+    width: 400px;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: black;
+    font-family: sans-serif, serif;
+    transition: transform 0.4s, top 0.4s;
+    visibility: hidden;
+    background-color: #FFFEF2; 
+    box-shadow: darkgreen 0px 5px 15px
+}
+
+.open-pop-forgot{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    z-index: 999;
+}
+
+.main-forgot label, .main-forgot input::placeholder{
+    font-family: sans-serif, serif;
+    margin-right: auto;
+}
+
+.forgotform{
+    display: flex;
+    flex-direction: column;
+}
+
+.forgot-row{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.forgot-input{
+    height: 25px;
+}
+
+.forgot-show{
+    margin-bottom: 5px;
+}
+
+.forgot-show span{
+    float: left;
+}
+
+.fshow{
+    float: right;
+}
+
+.forgot-submit{
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    background: #1c3012;
+    color: #fff;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    font-size: 25px;
+    overflow: hidden;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#confirm-password-error{
+    font-size: 15px;
+    margin-right: auto;
+    margin-top: 5px;
+    color: red;
+    font-family: sans-serif, serif;
+}
+
+#student-number-error{
+    margin-right: auto;
+    font-size: 12px;
+    color: red;
+    font-family: sans-serif, serif;
+    margin-top: 3px;
+}
+
+#email-check-message{
+    margin-right: auto;
+    font-size: 12px;
+    color: red;
+    font-family: sans-serif, serif;
+    margin-top: 3px;
+}
+
+#password-error{
+    color:red;
+    margin-right: auto;
+    font-size: 13px;
+}
+
+.popup-content{
+    width: 326px;
+    height: 408px;
+    background: white;
+    box-shadow: 4px 4px 70px 10px rgba(0, 0, 0, 0.11);
+    border-radius: 25px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1001;
+    display: block;
+}
+
+.imgbox{
+    text-align: center;
+}
+
+.imageCheck{
+    width: 112px;
+    margin-top: 40px;
+    
+}
+
+.success-title{
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    margin: auto;
+    font-family: sans-serif, serif;
+}
+
+.success-title{
+    color: #32ba7c;
+}
+
+.para{
+    font-weight: 500;
+    width: 80%;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    margin: auto;
+    font-family: sans-serif, serif;
+}
+
+.success-button{
+    width: 50%;
+    display: block;
+    margin: 20px auto;
+    border-radius: 25px;
+    padding: 10px;
+    text-decoration: none;
+    text-decoration-line: none;
+    color: white;
+    text-align: center;
+    letter-spacing: 0.05em;
+    font-family: sans-serif, serif;
+    cursor: pointer;
+}
+
+#sButton{
+    background: #32ba7c;
+}
+
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: none;
+}
+
+#change-email-error{
+    margin-right: auto;
+    font-size: 12px;
+    color: red;
+    font-family: sans-serif, serif;
+    margin-top: 3px;
+}
+
+#change-number-error{
+    margin-right: auto;
+    font-size: 12px;
+    color: red;
+    font-family: sans-serif, serif;
+    margin-top: 3px;
+}
+
+#change-password-error{
+    margin-right: auto;
+    font-size: 12px;
+    color: red;
+    font-family: sans-serif, serif;
+    margin-top: 3px;
+}
+
+#change-confirm-error{
+    margin-right: auto;
+    font-size: 12px;
+    color: red;
+    font-family: sans-serif, serif;
+    margin-top: 3px;
+}
+
+
+
+
+
+
+.forgot-popup-content{
+    width: 326px;
+    height: 408px;
+    background: white;
+    box-shadow: 4px 4px 70px 10px rgba(0, 0, 0, 0.11);
+    border-radius: 25px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1001;
+    display: block;
+}
+
+.forgot-imgbox{
+    text-align: center;
+}
+
+.forgot-imageCheck{
+    width: 112px;
+    margin-top: 40px;
+    
+}
+
+.forgot-success-title{
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    margin: auto;
+    font-family: sans-serif, serif;
+}
+
+.forgot-success-title{
+    color: #32ba7c;
+}
+
+.forgot-para{
+    font-weight: 500;
+    width: 80%;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    margin: auto;
+    font-family: sans-serif, serif;
+}
+
+.forgot-success-button{
+    width: 50%;
+    display: block;
+    margin: 20px auto;
+    border-radius: 25px;
+    padding: 10px;
+    text-decoration: none;
+    text-decoration-line: none;
+    color: white;
+    text-align: center;
+    letter-spacing: 0.05em;
+    font-family: sans-serif, serif;
+    cursor: pointer;
+}
+
+#forgot-sButton{
+    background: #32ba7c;
+}
+
+.forgot-popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: none;
+}
