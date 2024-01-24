@@ -946,7 +946,6 @@ section.upcoming-meetings .categories .main-button-red a {
 }
 
 .meeting-item .down-content .date {
-  float: left;
   text-align: center;
   display: inline-block;
   margin-right: 20px;
@@ -980,8 +979,6 @@ section.upcoming-meetings .categories .main-button-red a {
   font-size: 14px;
 }
 
-
-
 /*
 ---------------------------------------------
 apply now
@@ -989,7 +986,7 @@ apply now
 */
 
 section.apply-now {
-  background-image: linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)), url(../images/apply-bg.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)), url(../images/apply-bg.jpg);
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
