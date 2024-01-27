@@ -87,7 +87,6 @@ nav{
     visibility: hidden;
     transition: transform 0.4s, top 0.4s;
     background-color: #FFFEF2; 
-    box-shadow: darkgreen 0px 5px 15px
 }
 
 .open-popup{
@@ -173,7 +172,6 @@ nav{
     transition: transform 0.4s, top 0.4s;
     visibility: hidden;
     background-color: #FFFEF2; 
-    box-shadow: darkgreen 0px 5px 15px
 }
 
 .open-popin{
