@@ -30,7 +30,7 @@
               <div class="col-12">
                   <nav class="main-nav">
                       <!-- ***** Logo Start ***** -->
-                      <a class="logo">
+                      <a class="logo" id="Prof">
                           Your Profile
                       </a>
                       <!-- ***** Logo End ***** -->
@@ -80,13 +80,11 @@
                         <img src="assets/images/meeting-01.jpg" alt="">
                       </a>
                     </div>
+                  <a href="#" onclick="openPopup('myPopup1')">
                     <div class="down-content">
-                      <div class="date">
-                        <h6>Grade <span>1.75</span></h6>
-                      </div>
                         <h4>Operating Systems</h4>
-                      </a>
                       <p>Click to track your grades</p>
+                    </a>
                     </div>
                   </div>
                 </div>
@@ -102,63 +100,61 @@
                             <tr>
                               <td>Quiz</td>
                               <td>Activity</td>
-                              <td>Long Test</td>
                               <td>Midterm</td>
+                              <td>Final</td>
                             </tr>
                             <tr>
                               <td>20/20</td>
                               <td>15/15</td>
-                              <td>20/20</td>
-                              <td>50/50</td>
+                              <td>67/70</td>
+                              <td>50/80</td>
+                            </tr>
+                            <tr>
+                              <td>23/30</td>
+                              <td>17/20</td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>12/15</td>
+                              <td>22/25</td>
+                              <td></td>
+                              <td></td>
                             </tr>
                             <tr>
                               <td>15/15</td>
-                              <td>20/20</td>
-                              <td>15/20</td>
-                              <td>20/30</td>
-                            </tr>
-                            <tr>
-                              <td>20/20</td>
-                              <td>30/40</td>
-                              <td>20/50</td>
-                              <td>30/40</td>
-                            </tr>
-                            <tr>
-                              <td>15/15</td>
-                              <td>20/30</td>
-                              <td>25/30</td>
-                              <td>50/50</td>
+                              <td>30/30</td>
+                              <td></td>
+                              <td></td>
                             </tr>
                           </table>
                           <h4>Your Average:</h4>
                           <h6>1.75</h6><br>
                           <h4>Profesor:</h4>
-                          <h6>Benjamin Tuazon</h6><br>
+                          <h6>Joe Clark</h6><br>
                         </div>
                       </div>
                     </div>
                     <button onclick="closePopup('myPopup1')">Close</button>
                   </div>
                 </div>
-                <div class="col-lg-4 templatemo-item-col all imp">
+                <div class="col-lg-4 templatemo-item-col all soon">
                   <div class="meeting-item">
                     <div class="thumb">
                       <div class="price">
                       <a href="#" onclick="openPopup('myPopup2')">
-                        <span>COSC 60</span>
+                        <span>COSC 101</span>
                       </a>
                       </div>
                       <a href="#" onclick="openPopup('myPopup2')">
                         <img src="assets/images/meeting-02.jpg" alt="">
                         </a>
                     </div>
+                  <a href="#" onclick="openPopup('myPopup2')">
                     <div class="down-content">
-                      <div class="date">
-                        <h6>Grade <span>1.75</span></h6>
-                      </div>
                         <h4>Visual Computing</h4>
-                      </a>
                       <p>Click to track your grades</p>
+                    </a>
                     </div>
                   </div>
                 </div>
@@ -174,63 +170,66 @@
                             <tr>
                               <td>Quiz</td>
                               <td>Activity</td>
-                              <td>Long Test</td>
+                              <td>Assignment</td>
                               <td>Midterm</td>
+                              <td>Final</td>
                             </tr>
                             <tr>
-                              <td>1.75</td>
-                              <td>1.75</td>
-                              <td>1.75</td>
-                              <td>1.75</td>
+                              <td>20/20</td>
+                              <td>15/15</td>
+                              <td>22/25</td>
+                              <td>67/70</td>
+                              <td>50/80</td>
                             </tr>
                             <tr>
-                              <td>1.75</td>
-                              <td>1.75</td>
-                              <td>1.75</td>
-                              <td>1.75</td>
+                              <td>23/30</td>
+                              <td>17/20</td>
+                              <td>12/15</td>
+                              <td></td>
+                              <td></td>
                             </tr>
                             <tr>
-                              <td>1.75</td>
-                              <td>1.75</td>
-                              <td>1.75</td>
-                              <td>1.75</td>
+                              <td>12/15</td>
+                              <td>22/25</td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
                             </tr>
                             <tr>
-                              <td>1.75</td>
-                              <td>1.75</td>
-                              <td>1.75</td>
-                              <td>1.75</td>
+                              <td>15/15</td>
+                              <td>30/30</td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
                             </tr>
                           </table>
                           <h4>Your Average:</h4>
-                          <h6>1.75</h6><br>
+                          <h6>1.25</h6><br>
                           <h4>Profesor:</h4>
-                          <h6>Benjamin Tuazon</h6><br>
+                          <h6>Joe Clark</h6><br>
                         </div>
                       </div>
                     </div>
                     <button onclick="closePopup('myPopup2')">Close</button>
                   </div>
                 </div>
-                <div class="col-lg-4 templatemo-item-col all soon">
+                <div class="col-lg-4 templatemo-item-col all soon" id="COSC65">
                   <div class="meeting-item">
                     <div class="thumb">
                       <div class="price">
                       <a href="#" onclick="openPopup('myPopup3')">
-                        <span>COSC 80</span>
+                        <span>COSC 65</span>
                       </a>
                       </div>
                       <a href="#" onclick="openPopup('myPopup3')">
                         <img src="assets/images/meeting-03.jpg" alt="">
                         </a>
                     </div>
+                  <a href="#" onclick="openPopup('myPopup3')">
                     <div class="down-content">
-                      <div class="date">
-                        <h6>Grade <span>1.75</span></h6>
-                      </div>
-                        <h4>Social and Professional <br>Issues</h4>
-                      </a>
+                        <h4>Social and Professional Issues</h4>
                       <p>Click to track your grades</p>
+                    </a>
                     </div>
                   </div>
                 </div>
@@ -245,66 +244,65 @@
                           <h4>Your Grades:</h4>
                           <table class="table">
                             <tr>
+                            <tr>
                               <td>Quiz</td>
                               <td>Activity</td>
-                              <td>Long Test</td>
                               <td>Midterm</td>
+                              <td>Final</td>
                             </tr>
                             <tr>
-                              <td>1.75</td>
-                              <td>1.75</td>
-                              <td>1.75</td>
-                              <td>1.75</td>
+                              <td>20/20</td>
+                              <td>15/15</td>
+                              <td>67/70</td>
+                              <td>50/80</td>
                             </tr>
                             <tr>
-                              <td>1.75</td>
-                              <td>1.75</td>
-                              <td>1.75</td>
-                              <td>1.75</td>
+                              <td>23/30</td>
+                              <td>17/20</td>
+                              <td></td>
+                              <td></td>
                             </tr>
                             <tr>
-                              <td>1.75</td>
-                              <td>1.75</td>
-                              <td>1.75</td>
-                              <td>1.75</td>
+                              <td>12/15</td>
+                              <td>22/25</td>
+                              <td></td>
+                              <td></td>
                             </tr>
                             <tr>
-                              <td>1.75</td>
-                              <td>1.75</td>
-                              <td>1.75</td>
-                              <td>1.75</td>
+                              <td>15/15</td>
+                              <td>30/30</td>
+                              <td></td>
+                              <td></td>
                             </tr>
                           </table>
                           <h4>Your Average:</h4>
-                          <h6>1.75</h6><br>
+                          <h6>1.50</h6><br>
                           <h4>Profesor:</h4>
-                          <h6>Benjamin Tuazon</h6><br>
+                          <h6>Toni Morisson</h6><br>
                         </div>
                       </div>
                     </div>
                     <button onclick="closePopup('myPopup3')">Close</button>
                   </div>
                 </div>
-                <div class="col-lg-4 templatemo-item-col all att">
+                <div class="col-lg-4 templatemo-item-col all soon">
                   <div class="meeting-item">
                     <div class="thumb">
                       <div class="price">
                       <a href="#" onclick="openPopup('myPopup4')">
-                        <span>COSC 80</span>
+                        <span>MATH 3</span>
                       </a>
                       </div>
                       <a href="#" onclick="openPopup('myPopup4')">
                         <img src="assets/images/meeting-04.jpg" alt="">
                       </a>
                     </div>
+                    <a href="#" onclick="openPopup('myPopup4')">
                     <div class="down-content">
-                      <div class="date">
-                        <h6>Grade <span>1.75</span></h6>
-                      </div>
                         <h4>Linear Algebra</h4>
-                      </a>
                       <p>Click to track your grades</p>
                     </div>
+                  </a>
                   </div>
                 </div>
                 <div class="popup" id="myPopup4">
@@ -317,65 +315,64 @@
                           <h4>Your Grades:</h4>
                           <table class="table">
                             <tr>
+                            <tr>
                               <td>Quiz</td>
                               <td>Activity</td>
-                              <td>Long Test</td>
                               <td>Midterm</td>
+                              <td>Final</td>
                             </tr>
                             <tr>
-                              <td>1.75</td>
-                              <td>1.75</td>
-                              <td>1.75</td>
-                              <td>1.75</td>
+                              <td>20/20</td>
+                              <td>15/15</td>
+                              <td>67/70</td>
+                              <td>80/80</td>
                             </tr>
                             <tr>
-                              <td>1.75</td>
-                              <td>1.75</td>
-                              <td>1.75</td>
-                              <td>1.75</td>
+                              <td>23/30</td>
+                              <td>17/20</td>
+                              <td></td>
+                              <td></td>
                             </tr>
                             <tr>
-                              <td>1.75</td>
-                              <td>1.75</td>
-                              <td>1.75</td>
-                              <td>1.75</td>
+                              <td>15/15</td>
+                              <td>22/25</td>
+                              <td></td>
+                              <td></td>
                             </tr>
                             <tr>
-                              <td>1.75</td>
-                              <td>1.75</td>
-                              <td>1.75</td>
-                              <td>1.75</td>
+                              <td>15/15</td>
+                              <td>30/30</td>
+                              <td></td>
+                              <td></td>
                             </tr>
                           </table>
                           <h4>Your Average:</h4>
-                          <h6>1.75</h6><br>
+                          <h6>1.25</h6><br>
                           <h4>Profesor:</h4>
-                          <h6>Benjamin Tuazon</h6><br>
+                          <h6>Gerald Smith</h6><br>
                         </div>
                       </div>
                     </div>
                     <button onclick="closePopup('myPopup4')">Close</button>
                   </div>
                 </div>
-                <div class="col-lg-4 templatemo-item-col all att">
+                <div class="col-lg-4 templatemo-item-col all soon" id="COSC75">
                   <div class="meeting-item">
                     <div class="thumb">
                       <div class="price">
                       <a href="#" onclick="openPopup('myPopup5')">
-                        <span>COSC 80</span>
+                        <span>COSC 75</span>
                       </a>
                       </div>
                       <a href="#" onclick="openPopup('myPopup5')">
                         <img src="assets/images/meeting-03.jpg" alt="">
                         </a>
                     </div>
+                    <a href="#" onclick="openPopup('myPopup5')">
                     <div class="down-content">
-                      <div class="date">
-                        <h6>Grade <span>1.75</span></h6>
-                      </div>
                         <h4>Software Engineering II</h4>
-                      </a>
                       <p>Click to track your grades</p>
+                    </a>
                     </div>
                   </div>
                 </div>
@@ -389,40 +386,41 @@
                           <h4>Your Grades:</h4>
                           <table class="table">
                             <tr>
+                            <tr>
                               <td>Quiz</td>
                               <td>Activity</td>
-                              <td>Long Test</td>
                               <td>Midterm</td>
+                              <td>Final</td>
                             </tr>
                             <tr>
-                              <td>1.75</td>
-                              <td>1.75</td>
-                              <td>1.75</td>
-                              <td>1.75</td>
+                              <td>20/20</td>
+                              <td>15/15</td>
+                              <td>67/70</td>
+                              <td>50/80</td>
                             </tr>
                             <tr>
-                              <td>1.75</td>
-                              <td>1.75</td>
-                              <td>1.75</td>
-                              <td>1.75</td>
+                              <td>23/30</td>
+                              <td>17/20</td>
+                              <td></td>
+                              <td></td>
                             </tr>
                             <tr>
-                              <td>1.75</td>
-                              <td>1.75</td>
-                              <td>1.75</td>
-                              <td>1.75</td>
+                              <td>12/15</td>
+                              <td>22/25</td>
+                              <td></td>
+                              <td></td>
                             </tr>
                             <tr>
-                              <td>1.75</td>
-                              <td>1.75</td>
-                              <td>1.75</td>
-                              <td>1.75</td>
+                              <td>15/15</td>
+                              <td>30/30</td>
+                              <td></td>
+                              <td></td>
                             </tr>
                           </table>
                           <h4>Your Average:</h4>
                           <h6>1.75</h6><br>
                           <h4>Profesor:</h4>
-                          <h6>Benjamin Tuazon</h6><br>
+                          <h6>Toni Morisson</h6><br>
                         </div>
                       </div>
                     </div>
@@ -430,25 +428,23 @@
                   </div>
                 </div>
               
-                <div class="col-lg-4 templatemo-item-col all imp">
+                <div class="col-lg-4 templatemo-item-col all soon" id="COSC85">
                   <div class="meeting-item">
                     <div class="thumb">
                       <div class="price">
                       <a href="#" onclick="openPopup('myPopup6')">
-                        <span>COSC 80</span>
+                        <span>COSC 85</span>
                       </a>
                       </div>
                       <a href="#" onclick="openPopup('myPopup6')">
                         <img src="assets/images/meeting-02.jpg" alt="">
                         </a>
                     </div>
+                  <a href="#" onclick="openPopup('myPopup6')">
                     <div class="down-content">
-                      <div class="date">
-                        <h6>Grade <span>1.75</span></h6>
-                      </div>
-                        <h4>Application, Development<br>& Emerging technologies</h4>
-                      </a>
-                      <p>Click to track your grades</p>
+                        <h4>Experimental Statistics</h4>
+                        <p>Click to track your grades</p>
+                    </a>
                     </div>
                   </div>
                 </div>
@@ -462,65 +458,64 @@
                           <h4>Your Grades:</h4>
                           <table class="table">
                             <tr>
+                            <tr>
                               <td>Quiz</td>
                               <td>Activity</td>
-                              <td>Long Test</td>
                               <td>Midterm</td>
+                              <td>Final</td>
                             </tr>
                             <tr>
-                              <td>1.75</td>
-                              <td>1.75</td>
-                              <td>1.75</td>
-                              <td>1.75</td>
+                              <td>20/20</td>
+                              <td>15/15</td>
+                              <td>67/70</td>
+                              <td>50/80</td>
                             </tr>
                             <tr>
-                              <td>1.75</td>
-                              <td>1.75</td>
-                              <td>1.75</td>
-                              <td>1.75</td>
+                              <td>23/30</td>
+                              <td>17/20</td>
+                              <td></td>
+                              <td></td>
                             </tr>
                             <tr>
-                              <td>1.75</td>
-                              <td>1.75</td>
-                              <td>1.75</td>
-                              <td>1.75</td>
+                              <td>12/15</td>
+                              <td>22/25</td>
+                              <td></td>
+                              <td></td>
                             </tr>
                             <tr>
-                              <td>1.75</td>
-                              <td>1.75</td>
-                              <td>1.75</td>
-                              <td>1.75</td>
+                              <td>15/15</td>
+                              <td>30/30</td>
+                              <td></td>
+                              <td></td>
                             </tr>
                           </table>
                           <h4>Your Average:</h4>
-                          <h6>1.75</h6><br>
+                          <h6>2.00</h6><br>
                           <h4>Profesor:</h4>
-                          <h6>Benjamin Tuazon</h6><br>
+                          <h6>Joe Clark</h6><br>
                         </div>
                       </div>
                     </div>
                     <button onclick="closePopup('myPopup6')">Close</button>
                   </div>
                 </div>
-                <div class="col-lg-4 templatemo-item-col all soon imp">
+                <div class="col-lg-4 templatemo-item-col all soon">
                   <div class="meeting-item">
                     <div class="thumb">
                       <div class="price">
                       <a href="#" onclick="openPopup('myPopup7')">
-                        <span>COSC 80</span>
+                        <span>DCIT 26</span>
                       </a>
                       </div>
                       <a href="#" onclick="openPopup('myPopup7')">
                         <img src="assets/images/meeting-03.jpg" alt="">
                         </a>
                     </div>
+                  <a href="#" onclick="openPopup('myPopup7')">
                     <div class="down-content">
-                      <div class="date">
-                        <h6>Grade <span>1.75</span></h6>
-                      </div>
-                        <h4>Networks and <br>Communication</h4>
-                      </a>
+                        <h4>Application, Development & Emerging technologies</h4>
                       <p>Click to track your grades</p>
+                    </a>
                     </div>
                   </div>
                 </div>
@@ -535,40 +530,41 @@
                           <h4>Your Grades:</h4>
                           <table class="table">
                             <tr>
+                            <tr>
                               <td>Quiz</td>
                               <td>Activity</td>
-                              <td>Long Test</td>
                               <td>Midterm</td>
+                              <td>Final</td>
                             </tr>
                             <tr>
-                              <td>1.75</td>
-                              <td>1.75</td>
-                              <td>1.75</td>
-                              <td>1.75</td>
+                              <td>20/20</td>
+                              <td>15/15</td>
+                              <td>67/70</td>
+                              <td>50/80</td>
                             </tr>
                             <tr>
-                              <td>1.75</td>
-                              <td>1.75</td>
-                              <td>1.75</td>
-                              <td>1.75</td>
+                              <td>23/30</td>
+                              <td>17/20</td>
+                              <td></td>
+                              <td></td>
                             </tr>
                             <tr>
-                              <td>1.75</td>
-                              <td>1.75</td>
-                              <td>1.75</td>
-                              <td>1.75</td>
+                              <td>12/15</td>
+                              <td>22/25</td>
+                              <td></td>
+                              <td></td>
                             </tr>
                             <tr>
-                              <td>1.75</td>
-                              <td>1.75</td>
-                              <td>1.75</td>
-                              <td>1.75</td>
+                              <td>15/15</td>
+                              <td>30/30</td>
+                              <td></td>
+                              <td></td>
                             </tr>
                           </table>
                           <h4>Your Average:</h4>
-                          <h6>1.75</h6><br>
+                          <h6>1.50</h6><br>
                           <h4>Profesor:</h4>
-                          <h6>Benjamin Tuazon</h6><br>
+                          <h6>Jaime Escalante</h6><br>
                         </div>
                       </div>
                     </div>

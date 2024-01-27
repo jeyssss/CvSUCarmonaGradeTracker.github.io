@@ -67,8 +67,8 @@ body {
   }
 
   h4 {
-    margin: 10px 0;
-    color: #333;
+    margin: 5px ;
+    color: black;
   }
 
   p {
@@ -99,11 +99,16 @@ body {
     z-index: 1001;
   }
 
+  .popup-content h6 {
+    margin: 8px;
+    color: black; /* White text color */
+  }
+  
   .popup-content h2,
-  .popup-content h6,
   .popup-content p {
     margin: 8px;
     color: black; /* White text color */
+    text-align: center;
   }
 
   .popup-content button {

@@ -408,7 +408,7 @@ header
   height: 40px;
   text-indent: -9999em;
   z-index: 99;
-  right: 40px;
+  right: 25px;
   display: none;
 }
 
@@ -942,9 +942,9 @@ section.upcoming-meetings .categories .main-button-red a {
 
 .meeting-item .down-content {
   background-color: #fff;
-  padding: 30px;
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
+  padding: 5px;
+  border-right: 20px;
+  border-left: 20px;
 }
 
 .meeting-item .down-content .date {
@@ -971,14 +971,26 @@ section.upcoming-meetings .categories .main-button-red a {
   font-size: 18px;
   color: #1f272b;
   font-weight: 600;
-  display: inline-block;
   margin-bottom: 15px;
+  text-align: center;
+}
+
+.meeting-item .down-content h5{
+  font-size: 22px;
+  color: black;
+  text-align: center;
+}
+
+.meeting-item .down-content h6{
+  font-size: 15px;
+  color: black;
+  text-align: center;
 }
 
 .meeting-item .down-content p {
-  margin-left: 50px;
   color: #1f272b;
   font-size: 14px;
+  text-align: center;
 }
 
 /*
@@ -1457,7 +1469,7 @@ section.meetings-page {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 140px;
+  padding-top: 80px;
   padding-bottom: 0px;
 }
 
@@ -1778,6 +1790,12 @@ responsive
     display: none;
   }
 
+  .header-area .main-nav .logo {
+    margin-top: 11px;
+    margin-left: 5px;
+
+  }
+
   .sub-header .right-icons {
     text-align: center;
   }
@@ -1798,14 +1816,15 @@ responsive
 }
 
 @media (max-width: 420px){
+  
   .meeting-item .down-content {
-    padding: 12px;
+    padding: 5px;
     text-align: center;
-    min-height: 10px;
   }
   .meeting-item .down-content p {
     margin-left: 0px;
     text-align: center;
+    font-size: 13px;
   }
   .meeting-item .down-content .date {
     text-align: center;
@@ -1820,12 +1839,37 @@ responsive
   .meeting-item .down-content h4 {
     font-size: 14px;
   }
-  .meeting-item {
-    max-width: 109.98;
-    max-height: 309.28;
+
+  .meeting-item p{
+    line-height: 15px;
+    margin-bottom: 10px;
   }
-  .row .grid{
-    display: flex;
-    flex-wrap: wrap;
+
+  #COSC65 h4{
+    margin-top: 0px;
+    margin-bottom: 8px
+  }
+
+  #COSC65 p{
+    margin-top: 0px;
+    margin-bottom: 6px
+  }
+
+  #COSC75 h4{
+    margin-top: 0px;
+    margin-bottom: 4px;
+  }
+
+  #COSC85 .meeting-item{
+    top: -1px;
+  }
+
+  .header-area .main-nav .logo{
+    line-height: 80px;
+    color:black;
+  }
+
+  .header-area.header-sticky{
+    background-color: rgba(250,250,250,0.9);
   }
 }
