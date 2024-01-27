@@ -408,7 +408,7 @@ header
   height: 40px;
   text-indent: -9999em;
   z-index: 99;
-  right: 20px;
+  right: 10px;
   display: none;
 }
 
@@ -541,6 +541,7 @@ header
     font-size: 17px;
     margin-left: auto;
     color: #1e1e1e;
+    margin-top: 5px;
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
@@ -1795,10 +1796,6 @@ responsive
 @media (max-width: 420px) {
   .header-area.header-sticky {
     background-color: rgba(250,250,250,0.9);
-  }
-
-  .header-area .main-nav #Prof {
-    line-height: 0px;
   }
 }
 

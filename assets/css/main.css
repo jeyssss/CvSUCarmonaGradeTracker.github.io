@@ -1790,11 +1790,6 @@ responsive
     display: none;
   }
 
-  .header-area .main-nav .logo {
-    margin-top: 11px;
-    margin-left: 5px;
-
-  }
 
   .sub-header .right-icons {
     text-align: center;
@@ -1864,8 +1859,14 @@ responsive
     top: -1px;
   }
 
+  #DCIT26 h4{
+    text-align: center;
+    margin: 3px;
+    margin-bottom: 9px;
+  }
+
   .header-area .main-nav .logo{
-    line-height: 80px;
+    line-height: 100px;
     color:black;
   }
 
