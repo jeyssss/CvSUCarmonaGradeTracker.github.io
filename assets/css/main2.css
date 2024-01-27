@@ -408,7 +408,7 @@ header
   height: 40px;
   text-indent: -9999em;
   z-index: 99;
-  right: 25px;
+  right: 10px;
   display: none;
 }
 
@@ -538,10 +538,10 @@ header
 
 @media (max-width: 767px) {
   .header-area .main-nav .logo {
-    font-size: 18px;
-    margin-left: 14px;
+    font-size: 17px;
+    margin-left: auto;
     color: #1e1e1e;
-
+    margin-top: 5px;
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
@@ -682,8 +682,7 @@ banner
 }
 
 .main-banner .caption {
-  position: absolute;
-  top: 50%;
+  margin-top: 45%;
   transform: translateY(-50%);
 }
 
@@ -943,9 +942,9 @@ section.upcoming-meetings .categories .main-button-red a {
 
 .meeting-item .down-content {
   background-color: #fff;
-  padding: 5px;
-  border-right: 20px;
-  border-left: 20px;
+  padding: 30px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 .meeting-item .down-content .date {
@@ -972,26 +971,14 @@ section.upcoming-meetings .categories .main-button-red a {
   font-size: 18px;
   color: #1f272b;
   font-weight: 600;
+  display: inline-block;
   margin-bottom: 15px;
-  text-align: center;
-}
-
-.meeting-item .down-content h5{
-  font-size: 22px;
-  color: black;
-  text-align: center;
-}
-
-.meeting-item .down-content h6{
-  font-size: 15px;
-  color: black;
-  text-align: center;
 }
 
 .meeting-item .down-content p {
+  margin-left: 50px;
   color: #1f272b;
   font-size: 14px;
-  text-align: center;
 }
 
 /*
@@ -1470,7 +1457,7 @@ section.meetings-page {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 80px;
+  padding-top: 140px;
   padding-bottom: 0px;
 }
 
@@ -1739,7 +1726,8 @@ responsive
 @media (max-width: 992px) {
 
   .main-banner .caption {
-    top: 55%;
+    margin-top: 120%;
+    margin-left: 3%;
     text-align: center;
   }
 
@@ -1791,7 +1779,6 @@ responsive
     display: none;
   }
 
-
   .sub-header .right-icons {
     text-align: center;
   }
@@ -1804,74 +1791,17 @@ responsive
     color: #1f272b;
     
   }
+}
 
+@media (max-width: 420px) {
+  .header-area.header-sticky {
+    background-color: rgba(250,250,250,0.9);
+  }
 }
 
 .table {
   border: "1";
+  color: black;
 }
 
-@media (max-width: 420px){
-  
-  .meeting-item .down-content {
-    padding: 5px;
-    text-align: center;
-  }
-  .meeting-item .down-content p {
-    margin-left: 0px;
-    text-align: center;
-    font-size: 13px;
-  }
-  .meeting-item .down-content .date {
-    text-align: center;
-    display: inline-block;
-    margin-left: 9px;
-  }
-  .meeting-item .thumb .price span {
-    font-size: 10px;
-    margin-right: 15px;
-    padding: 3px 7px;
-  }
-  .meeting-item .down-content h4 {
-    font-size: 14px;
-  }
 
-  .meeting-item p{
-    line-height: 15px;
-    margin-bottom: 10px;
-  }
-
-  #COSC65 h4{
-    margin-top: 0px;
-    margin-bottom: 8px
-  }
-
-  #COSC65 p{
-    margin-top: 0px;
-    margin-bottom: 6px
-  }
-
-  #COSC75 h4{
-    margin-top: 0px;
-    margin-bottom: 4px;
-  }
-
-  #COSC85 .meeting-item{
-    top: -1px;
-  }
-
-  #DCIT26 h4{
-    text-align: center;
-    margin: 3px;
-    margin-bottom: 9px;
-  }
-
-  .header-area .main-nav .logo{
-    line-height: 80px;
-    color:black;
-  }
-
-  .header-area.header-sticky{
-    background-color: rgba(250,250,250,0.9);
-  }
-}
