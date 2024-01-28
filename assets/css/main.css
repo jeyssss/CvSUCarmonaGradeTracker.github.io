@@ -1812,6 +1812,12 @@ responsive
 }
 
 @media (max-width: 420px){
+
+  .meeting-item .thumb .price {
+    position: absolute;
+    left: 17px;
+    top: 25px;
+  }
   
   .scroll-to-section a{
     display: block;
