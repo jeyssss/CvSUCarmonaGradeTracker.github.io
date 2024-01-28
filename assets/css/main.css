@@ -977,7 +977,7 @@ section.upcoming-meetings .categories .main-button-red a {
 }
 
 .meeting-item .down-content h5{
-  font-size: 22px;
+  font-size: 19px;
   color: black;
   text-align: center;
 }
@@ -1813,6 +1813,9 @@ responsive
 
 @media (max-width: 420px){
   
+  .scroll-to-section a{
+    display: block;
+  }
   .meeting-item .down-content {
     padding: 5px;
     text-align: center;
@@ -1873,5 +1876,13 @@ responsive
 
   .header-area.header-sticky{
     background-color: rgba(250,250,250,0.9);
+  }
+
+  #Prof{
+    line-height: 100px;
+  }
+
+  #proflog{
+    line-height: 100px;
   }
 }

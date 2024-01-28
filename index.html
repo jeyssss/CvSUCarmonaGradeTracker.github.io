@@ -105,7 +105,7 @@
                             <label for="student">Student</label>
                         </div>
                         <div id="profdiv" class="role-option">
-                            <input type="radio" name="schoolrole" id="professor" value="professor" required>
+                            <input type="radio" name="schoolrole" id="professor" value="professor" >
                             <label for="professor">Professor</label>
                         </div>
                     </div>
@@ -114,36 +114,36 @@
 
                         <div class="form-row">
                             <label for="fname">First Name</label>
-                            <input type="text" class="infoinput" placeholder="Oliver Thomas" name="fname" id="fname" pattern="[A-Za-z]*" title="Please enter only letters for the first name." required>
+                            <input type="text" class="infoinput" placeholder="Oliver Thomas" name="fname" id="fname" pattern="[A-Za-z]*" title="Please enter only letters for the first name.">
                         </div>
 
                         <div class="form-row">
                             <label for="lname">Last Name</label>
-                            <input type="text" class="infoinput" placeholder="Kruggs" name="lname" id="lname" pattern="[A-Za-z]*" title="Please enter only letters for the first name." required>
+                            <input type="text" class="infoinput" placeholder="Kruggs" name="lname" id="lname" pattern="[A-Za-z]*" title="Please enter only letters for the first name." >
                         </div>
 
                         <div class="form-row">
                             <label for="email">Email</label>
-                            <input type="email" class="infoinput" placeholder="emailexample@gmail.com" name="email" id="email" required>
+                            <input type="email" class="infoinput" placeholder="emailexample@gmail.com" name="email" id="email">
                             <span id="email-check-message" class="error-message"></span>
                         </div>
               
 
                         <div class="form-row">
                             <label for="studnumber" id="stud">Student Number</label>
-                            <input type="number" class="infoinput"  placeholder="210101234" name="studnumber" id="studnumber" required>
+                            <input type="number" class="infoinput"  placeholder="210101234" name="studnumber" id="studnumber">
                             <span id="student-number-error" class="error-message"></span>
                         </div>
 
                         <div class="form-row">
                             <label for="password">Password</label>
-                            <input type="password" class="infoinput" id="password" placeholder="Minimum length: 8" name="password" required>
+                            <input type="password" class="infoinput" id="password" placeholder="Minimum length: 8" name="password">
                             <span id="password-error" class="error-message"></span>
                         </div>
 
                         <div class="form-row">
                             <label for="confirm-password">Confirm Password</label>
-                            <input type="password" class="infoinput" id="confirm-password" placeholder="Minimum length: 8" name="confirm-passw" required>
+                            <input type="password" class="infoinput" id="confirm-password" placeholder="Minimum length: 8" name="confirm-passw">
                             <span id="confirm-password-error" class="error-message"></span>
                         </div>
 
@@ -153,7 +153,7 @@
                         </div>
                         <input type="hidden" name="form_type" value="signup" id="form_type_signup">
 
-                        <button type="submit" class="submitbutton" onclick="">Create Account</button>
+                        <button type="submit" class="submitbutton" onclick="redirectToMeetingPage()">Create Account</button>
                     </div>
 
                 </form>
@@ -180,25 +180,25 @@
 
                         <div class="forgot-row">
                             <label for="forgot-email">Email</label>
-                            <input type="email" class="forgot-input" placeholder="emailexample@gmail.com" name="forgot-email" id="forgot-email" required>
+                            <input type="email" class="forgot-input" placeholder="emailexample@gmail.com" name="forgot-email" id="forgot-email">
                             <span id="change-email-error" class="error-message"></span>
                         </div>
 
                         <div class="forgot-row">
                             <label for="forgot-number">Student/License Number</label>
-                            <input type="number" class="forgot-input" placeholder="210101234" name="forgot-number" id="forgot-number" required>
+                            <input type="number" class="forgot-input" placeholder="210101234" name="forgot-number" id="forgot-number">
                             <span id="change-number-error" class="error-message"></span>
                         </div>
 
                         <div class="forgot-row">
                             <label for="forgot-password">New Password</label>
-                            <input type="password" class="forgot-input" placeholder="********" id="forgot-password" name="forgot-password" required>
+                            <input type="password" class="forgot-input" placeholder="********" id="forgot-password" name="forgot-password">
                             <span id="change-password-error" class="error-message"></span>
                         </div>
 
                         <div class="forgot-row">
                             <label for="confirm-forgot">Confirm Password</label>
-                            <input type="password" class="forgot-input" placeholder="********" id="confirm-forgot" name="confirm-forgot" required>
+                            <input type="password" class="forgot-input" placeholder="********" id="confirm-forgot" name="confirm-forgot">
                             <span id="change-confirm-error" class="error-message"></span>
                         </div>
 
@@ -236,7 +236,7 @@
               <h2>Welcome to CvSU Carmona Grade Tracker</h2>
               <p>CvSU is mandated to provide excellent, equitable and relevant educational opportunities in the arts, sciences and technology through quality instruction, and responsive research and development activities. It shall produce professional, skilled and morally upright individuals for global competitiveness.</p>
               <div class="main-button-red">
-                  <div class="scroll-to-section"><a href="#" onclick="toggleSignin()">Sign In</a>
+                  <div class="scroll-to-section"><a href="#" class="clic" onclick="toggleSignin()">Sign In</a>
               </div>
               </div>
               </div>
@@ -255,6 +255,18 @@
         document.getElementById("LagButton").addEventListener("click",function(){
             window.location.href="index1.html"
         })
+    </script>
+    <script>
+        function redirectToMeetingPage() {
+            var studentRadio = document.getElementById("student");
+            var professorRadio = document.getElementById("professor");
+    
+            if (studentRadio.checked) {
+                window.location.href = "index1.html";
+            } else if (professorRadio.checked) {
+                window.location.href = "index2.html";
+            }
+        }
     </script>
 </body>
 
