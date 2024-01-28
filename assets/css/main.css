@@ -1885,4 +1885,9 @@ responsive
   #proflog{
     line-height: 100px;
   }
+
+  .main-banner .caption .main-button-red{
+    margin-left: 150px;
+    margin-right: 150px;
+  }
 }
